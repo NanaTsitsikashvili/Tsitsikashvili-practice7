@@ -8,8 +8,8 @@ class EmailNotification extends Notification {
     }
 }
 
-class PayPalProcessor implements PaymentProcessor {
-    public void processPayment(double amount) {
-        System.out.println("Processing PayPal payment " + amount);
+class SMSNotification extends Notification {
+    public void sendNotification(String message) {
+        System.out.println("Sending SMS notification: " + message);
     }
 }
